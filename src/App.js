@@ -1,24 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
+import Header from './Components/Header';
+import Footer from './Components/Footer';
+import SiteContext from './context/SiteContext';
+import Home from './Components/Home';
 
 function App() {
+
+  const [theme, setTheme] = useState('light');
+  const [language, setLanguage] = useState('TR');  
+ 
+  const providedData = {
+    theme, 
+    setTheme,
+    language,
+    setLanguage
+  }
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <SiteContext.Provider value={providedData}>
+      <Home></Home>
+    </SiteContext.Provider>
   );
 }
 
