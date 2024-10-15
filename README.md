@@ -6,4 +6,4 @@ Check branches out step by step.
 
 
 
-thanks to [Tayfun Erbilen](./@tayfunerbilen) 
+thanks to [Tayfun Erbilen](https://github.com/tayfunerbilen) 
