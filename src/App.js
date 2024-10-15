@@ -1,15 +1,21 @@
 import './App.css';
-import SiteProvider from './context/SiteContext';
+import { SiteContext, AuthContext} from "./context"
 import Home from './Components/Home';
 
 function App() {
 
- 
-  
+
+
   return (
-    <SiteProvider>
-    <Home></Home>
-    </SiteProvider>
+
+    <SiteContext>
+      <AuthContext>
+
+        <Home />
+        
+      </AuthContext>
+    </SiteContext>
+
   );
 }
 
