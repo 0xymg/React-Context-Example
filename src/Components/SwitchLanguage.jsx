@@ -1,9 +1,9 @@
 import { useContext } from "react"
-import SiteContext from "../context/SiteContext"; 
+import SiteContext, {Context} from "../context/SiteContext"; 
 
 
 function SwitchLanguage() {
-    const { language, setLanguage} = useContext(SiteContext)
+    const { language, setLanguage} = useContext(Context)
 
     return (
         <>
