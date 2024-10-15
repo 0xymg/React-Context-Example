@@ -3,4 +3,7 @@
 Here are multiple context usage in the react application. 
 Check branches out step by step.
 
-thanks @tayfunerbilen
+
+
+
+thanks to [Tayfun Erbilen](/@tayfunerbilen) 
