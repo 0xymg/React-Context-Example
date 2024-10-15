@@ -1,10 +1,10 @@
 import { useContext } from "react"
-import SiteContext, {Context} from "../context/SiteContext"; 
+import SiteContext, { useSite } from "../context/SiteContext"; 
 
 
 
 function SwitchTheme() {
-  const { theme, setTheme} = useContext(Context)
+  const { theme, setTheme} = useSite()
   return (
     <>
 
